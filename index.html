@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <style>
+        .xoa,
+        .capNhat {
+            height: 30px;
+            font-weight: bold;
+            padding: 0px 5px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            background-color: rgb(255, 86, 86);
+            cursor: pointer;
+            text-align: center;
+            margin-left: 15px;
+        }
+        
+        .capNhat {
+            background-color: rgb(76, 250, 76);
+            margin-left: 3px;
+        }
+        
+        .tienIch {
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="col-lg-6 mt-3">
+
+
+        <form action="">
+            <div class="form-group">
+                <label for="exampleInputEmail1">ID</label>
+                <input type="text" class="form-control" id="id" aria-describedby="emailHelp" placeholder="Enter ID">
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Name">
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Price</label>
+                <input type="text" class="form-control" id="price" placeholder="Enter Price">
+            </div>
+
+            <button type="submit" class="btn btn-primary" onclick="themMoi()">Submit</button>
+        </form>
+    </div>
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <td></td>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="hung"></tbody>
+    </table>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cập nhật Sản Phẩm</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">ID</label>
+                        <input type="text" class="form-control" id="idUpdate" aria-describedby="emailHelp" placeholder="Enter ID">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="text" class="form-control" id="nameUpdate" aria-describedby="emailHelp" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Price</label>
+                        <input type="text" class="form-control" id="priceUpdate" placeholder="Enter Price">
+                    </div>
+                </div>
+                <div class="modal-footer" id="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="bootstrap-4.6.1-dist/js/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+    <script src="dist/app.js"></script>
+</body>
+
+</html>
